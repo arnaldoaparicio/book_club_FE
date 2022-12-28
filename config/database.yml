@@ -75,11 +75,15 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
 production:
   <<: *default
-  database: book_club_FE_production
-  username: book_club_FE
-  password: <%= ENV['BOOK_CLUB_FE_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  url: <%= ENV['DATABASE_URL'] %>
+
+#
+# production:
+#   <<: *default
+#   database: book_club_FE_production
+#   username: book_club_FE
+#   password: <%= ENV['BOOK_CLUB_FE_DATABASE_PASSWORD'] %>
