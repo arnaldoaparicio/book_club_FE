@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 
   def create
     # conn = Faraday.new(url: 'http://localhost:3000/')
-    conn = Faraday.new(url: 'https://hidden-garden-03870.herokuapp.com/')
+    conn = Faraday.new(url: 'https://bookclub-2022-be.fly.dev/')
     auth_hash = request.env['omniauth.auth']
     email = auth_hash['info']['email']
 
