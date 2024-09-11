@@ -39,6 +39,7 @@ gem 'bootstrap', '~> 5.1', '>= 5.1.3'
 gem 'jquery-rails'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-rails_csrf_protection'
+gem "ffi", "< 1.17.0"
 
 
 group :development, :test do
